@@ -1,0 +1,4 @@
+html,tailwind 
+poppins
+imagkit.io to store image
+https://ik.imagekit.io/wtntjijqi/supermarket-future-ai-generative-supermarket-future-generative-ai-273445770.jpg?updatedAt=1720620824605
