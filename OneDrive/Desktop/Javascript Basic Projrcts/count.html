@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>COUNT</title>
+</head>
+<body>
+    <div class="2xl:container mx-auto">
+        <div class="w-[90%] mx-auto">
+            <div class="flex flex-col justify-center items-center min-h-screen">
+                <p class="text-center font-extrabold text-2xl">COUNT</p>
+                <p class="py-10 text-center font-extrabold text-3xl" id="no">0</p>
+                <div class=" flex justify-center items-center gap-20">
+                    <button class="border p-2 bg-green-950 text-white" id="plus">+</button>
+                    <button class="border p-2 bg-green-950 text-white" id="reset">RESET</button>
+                    <button class="border p-2 bg-red-950  text-white" id="minus">-</button>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+<script>
+    const p = document.getElementById("plus")
+    const m = document.getElementById("minus")
+    const r = document.getElementById("reset")
+    const n = document.getElementById("no")
+    p.addEventListener("click",()=>{
+        console.log("+") 
+        n.textContent = parseInt(n.textContent) + 1
+        n.classList.value ="text-green-950 py-10 text-center font-extrabold text-3xl"
+    })
+    m.addEventListener("click",()=>{
+        console.log("-")
+        n.textContent = parseInt(n.textContent) - 1
+        n.classList.value ="text-red-950 py-10 text-center font-extrabold text-3xl"
+    })
+    r.addEventListener("click",()=>{
+        console.log("0")
+        n.textContent = 0
+        n.classList.value ="text-black py-10 text-center font-extrabold text-3xl"
+    })
+</script>
+</html>
